@@ -1,0 +1,29 @@
+/*注释作为bootstarp样式的增补*/
+
+/*对页面进行初始化*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+/*多种字体实现优先*/
+
+/*头部样式*/
+#header{
+    height: 200px;
+}
+/*/头部样式*/
+
+/*测试样式区域*/
+section{
+    height: 200px;
+    background-color: #2aabd2;
+}
+section:nth-child(2n+1){
+    background-color: #fff;
+}
+
+/*/底部样式*/
+#footer{
+    height: 200px;
+}
+/*/底部样式*/
+
