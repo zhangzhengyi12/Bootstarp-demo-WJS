@@ -9,6 +9,10 @@ body {
     src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
 }
 
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+
+/*/导入字体*/
 [class^="icon-"],[class*=" icon-"]{
     font-family: itcast;
     font-style: normal;
@@ -32,13 +36,170 @@ body {
     content: "\e920";
 }
 
+/*Bootstarp 增补样式*/
+
+/*自定义注册按钮样式*/
+.btn-register {
+    color: #FFFFFF;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #E92322;
+    border-color: #DB3B43;
+}
+
+.btn-register .badge {
+    color: #E92322;
+    background-color: #FFFFFF;
+}
+/*/自定义按钮样式*/
+
+/*自定义导航样式*/
+.navbar-itcast {
+    background-color: #fff;
+    border-top: none;
+    border-color: #f5f5f5;
+    height: 70px;
+}
+.navbar-itcast .navbar-brand {
+    color: #777;
+    height: 70px;
+}
+.navbar-itcast .navbar-brand:hover,
+.navbar-itcast .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar-itcast .navbar-text {
+    color: #777;
+}
+.navbar-itcast .navbar-nav > li > a {
+    color: #777;
+    line-height: 38px;
+    font-size: 14px;
+}
+.navbar-itcast .navbar-nav > li > a:hover,
+.navbar-itcast .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+.navbar-itcast .navbar-nav > .active > a,
+.navbar-itcast .navbar-nav > .active > a:hover,
+.navbar-itcast .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color:transparent;
+    border-bottom: 2px solid #e92322;
+}
+.navbar-itcast .navbar-nav > .disabled > a,
+.navbar-itcast .navbar-nav > .disabled > a:hover,
+.navbar-itcast .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+}
+.navbar-itcast .navbar-toggle {
+    border-color: #ddd;
+}
+.navbar-itcast .navbar-toggle:hover,
+.navbar-itcast .navbar-toggle:focus {
+    background-color: #ddd;
+}
+.navbar-itcast .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+.navbar-itcast .navbar-collapse,
+.navbar-itcast .navbar-form {
+    border-color: #e7e7e7;
+}
+.navbar-itcast .navbar-nav > .open > a,
+.navbar-itcast .navbar-nav > .open > a:hover,
+.navbar-itcast .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+}
+@media (max-width: 767px) {
+    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-itcast .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+}
+.navbar-itcast .navbar-link {
+    color: #777;
+}
+.navbar-itcast .navbar-link:hover {
+    color: #333;
+}
+.navbar-itcast .btn-link {
+    color: #777;
+}
+.navbar-itcast .btn-link:hover,
+.navbar-itcast .btn-link:focus {
+    color: #333;
+}
+.navbar-itcast .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-itcast .btn-link:hover,
+.navbar-itcast .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-itcast .btn-link:focus {
+    color: #ccc;
+}
+/*/自定义导航样式*/
+
+/*/Bootstarp 增补样式*/
+
 
 /*多种字体实现优先*/
 
 /*头部样式*/
 #header{
-    height: 200px;
-    background-color: #f0f0f0;
+
 }
 
 #header .header-topbar{
@@ -46,6 +207,23 @@ body {
     border-bottom: 1px solid #c0c0c0;
     line-height: 40px;
 }
+
+#header .header-topbar div.container div.row div + div {
+    border-left: 1px solid #c0c0c0;
+    height: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+#header .header-topbar div.container div.row div{
+    height: 40px;
+    font-size: 12px;
+    color: #888;
+}
+
+
+/*同胞选择器 意为选择div.row 下第一个div 以后的所有Div 他并不是直接选之后的所有元素 是选择a后面b b后面c c后面d 不断重复 造成这种效果*/
+
 
 #header .header-topbar-phone-link{
     font-size: 12px;
@@ -64,25 +242,49 @@ body {
     left: 50%;
     margin-left: -60px;
     top: 28px;
+    z-index: 1002;
 }
 #header .header-topbar-phone-link:hover img{
     display: block;
 }
 
-/*清除a标签的基本样式*/
+#header .header-topbar-help a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #888;
+}
+
+#header .header-topbar-login a{
+    margin-top: -3px;
+}
+
+#header .icon-icon{
+
+    font-size: 40px;
+    line-height: 40px;
+    color: #E92322;
+    vertical-align: middle;
+}
+#header .icon-logo{
+    vertical-align:middle;
+    font-size: 32px;
+    line-height: 40px;
+}
+
 
 /*/头部样式*/
 
-/*测试样式区域*/
-section{
-    height: 200px;
-    background-color: #fff;
-}
-section:nth-child(2n){
-    background-color: #f5f5f5;
-}
 
-/*/底部样式*/
+/*测试样式区域*/
+/*section{*/
+    /*height: 200px;*/
+    /*background-color: #fff;*/
+/*}*/
+/*section:nth-child(2n){*/
+    /*background-color: #f5f5f5;*/
+/*}*/
+
+/*底部样式*/
 #footer{
     height: 200px;
 }
