@@ -56,29 +56,69 @@
             <!--要是位置错误 在错误的元素前clearfix一下-->
             <!--<div style="clear: both"></div>-->
             <div class="navbar-header ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a href="#" class="navbar-brand"><i class="icon-icon"></i>
                         <i class="icon-logo"></i>
                 </a>
             </div>
-
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">我要投资</a></li>
-                <li><a href="#">我要借款</a></li>
-                <li><a href="#">平台介绍</a></li>
-                <li><a href="#">新手专区</a></li>
-                <li><a href="#">最新动态</a></li>
-                <li><a href="#">微论坛</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">个人中心</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--用这个div包裹你的Ul列表-->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">我要投资</a></li>
+                    <li><a href="#">我要借款</a></li>
+                    <li><a href="#">平台介绍</a></li>
+                    <li><a href="#">新手专区</a></li>
+                    <li><a href="#">最新动态</a></li>
+                    <li><a href="#">微论坛</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">个人中心</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 <!--/头部区域-->
 
 <!--广告轮播-->
-<section></section>
+<section id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active" data-image-lg="images/slide_01_2000x410.jpg" data-image-sm="images/slide_01_640x340.jpg">
+            </div>
+            <div class="item" data-image-lg="images/slide_02_2000x410.jpg" data-image-sm="images/slide_02_640x340.jpg">
+            </div>
+            <div class="item" data-image-lg="images/slide_03_2000x410.jpg" data-image-sm="images/slide_03_640x340.jpg">
+            </div>
+            <div class="item" data-image-lg="images/slide_04_2000x410.jpg" data-image-sm="images/slide_04_640x340.jpg">
+            </div>
+            <!--注意 内部不能使用双引号 因为回合外面的双引号冲突-->
+            <!--想要做到图片响应式加载 就不能直接使用 得先用data记录下来-->
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+</section>
 <!--/广告轮播-->
 
 <!--特色介绍-->
@@ -109,5 +149,6 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="lib/Bootstarp/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

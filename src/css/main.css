@@ -190,6 +190,16 @@ fieldset[disabled] .navbar-itcast .btn-link:hover,
 fieldset[disabled] .navbar-itcast .btn-link:focus {
     color: #ccc;
 }
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+}
+#bs-example-navbar-collapse-1{
+    background-color: #fff;
+}
 /*/自定义导航样式*/
 
 /*/Bootstarp 增补样式*/
@@ -271,8 +281,34 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
     line-height: 40px;
 }
 
+.navbar-toggle {
+    margin: 18px 18px;
+ }
+
+
 
 /*/头部样式*/
+
+/*广告轮播样式*/
+#carousel-example-generic > .carousel-inner > div {
+    height: 410px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*cover代表最小的边到达停止缩放 另外一个代表把最大的边放入停止缩放 可以理解为平铺 和 容纳*/
+}
+@media (max-width: 768px) {
+    #carousel-example-generic > .carousel-inner > div.item {
+        height: auto;
+        /*第一件事 让容器高度自动*/
+    }
+    #carousel-example-generic > .carousel-inner > div.item > img {
+        width: 100%;
+        /*第二件事 让图片宽度占满容器 覆盖背景 */
+    }
+}
+/*配合js实现 大屏背景图高度固定 小屏幕用img高度自动 */
+/*/广告轮播样式*/
 
 
 /*测试样式区域*/
@@ -285,8 +321,6 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
 /*}*/
 
 /*底部样式*/
-#footer{
-    height: 200px;
-}
+
 /*/底部样式*/
 
