@@ -310,6 +310,91 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
 /*配合js实现 大屏背景图高度固定 小屏幕用img高度自动 */
 /*/广告轮播样式*/
 
+/*介绍区域*/
+#aboutus{
+    padding-top: 40px ;
+}
+/*#aboutus > .container > div.row > div{*/
+    /*background-color: #2aabd2;*/
+    /*height: 5em;*/
+    /*border: 1px solid black;*/
+/*}*/
+
+/*#aboutus > .container > div.row > div:nth-of-type(2n){*/
+    /*background-color: #3e8f3e;*/
+/*}*/
+
+#aboutus .icon-uniE907:before{
+    content: "\e907";
+}
+
+#aboutus{
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#aboutus i {
+    font-size: 32px;
+}
+
+#aboutus  a{
+    color: #333333;
+    text-decoration: none;
+}
+
+#aboutus  a:hover{
+    text-decoration: none;
+    color: #E92322;
+}
+
+#aboutus > .container > .row > div > a > div.media{
+    margin: 30px auto;
+}
+
+/*/介绍区域*/
+
+/*立即预约*/
+#nowmark{
+    border-bottom: 1px solid #c0c0c0;
+    height: 50px;
+}
+
+#nowmark .icon-uniE906:before{
+    content: "\e906";
+}
+
+#nowmark > .container >p{
+    line-height: 48px;
+}
+
+#nowmark > .container > p > i{
+    font-size: 18px;
+}
+
+#nowmark > .container > p > span{
+    color: #E92322;
+    font-size: 18px;
+}
+
+#nowmark > .container > p > span{
+    color: #E92322;
+    font-size: 18px;
+}
+
+#nowmark > .container > p > .button-mark{
+    color: #E92322;
+    border-bottom: 1px dotted #E92322;
+}
+
+#nowmark > .container > p > .button-mark:hover{
+    text-decoration: none;
+}
+
+#nowmark > .container > .pull-right > .icon-uniE905:before {
+    content: "\e905";
+}
+
+/*/立即预约*/
+
 
 /*测试样式区域*/
 /*section{*/
