@@ -510,6 +510,36 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
     margin-top: 40px;
 }
 
+.panel-itcast > .panel-heading > p.tooltips{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: -20px;
+}
+
+.panel-itcast > .panel-heading > p.tooltips > a.badge{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    text-align: center;
+    background-color: transparent;
+    padding: 3px;
+}
+/*这种字体外面小框的效果 让他父元素占满容器文字居中对齐 子元素设置ib 固定宽高 边框*/
+
+.panel-itcast > .panel-heading > p.tooltips > a.badge.bj{
+    color: #e92322;
+    border-color: #e92322;
+}
+
+.panel-itcast > .panel-heading > p.tooltips > a.badge.sh{
+    color: #399;
+    border-color: #399;
+}
+
 .panel-itcast > .panel-heading > p > strong {
     font-size: 35px;
 }

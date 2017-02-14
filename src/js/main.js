@@ -22,4 +22,5 @@ $(function () {
         //获取一个存放item的数组
     }
     $(window).on('resize',resize).trigger('resize');
-})
+    $('[data-toggle="tooltip"]').tooltip();
+});
