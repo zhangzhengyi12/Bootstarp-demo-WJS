@@ -23,4 +23,21 @@ $(function () {
     }
     $(window).on('resize',resize).trigger('resize');
     $('[data-toggle="tooltip"]').tooltip();
+    //控制标签页的容器宽度
+    //判断屏幕宽度是否低于容器该有的宽度
+    var $ulcontainer = $('.nav-tabs');
+    var $scroll = $('.scroll-ul');
+    //获取ul对象
+    var numWidth = 0;
+    $ulcontainer.children().each(function (index,elment) {
+        numWidth += elment.clientWidth;
+    })
+    if( numWidth > $(window).width() ){
+        console.log($scroll);
+        $scroll.css('overflow-x','scroll');
+        $ulcontainer.css('width',numWidth);
+    }
 });
+
+// numWidth > $(window).width()
+// numWidth < $(window).width()
