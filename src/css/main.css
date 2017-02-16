@@ -9,8 +9,7 @@ body {
     src: url('../font/MiFie-Web-Font.eot') format('embedded-opentype'), url('../font/MiFie-Web-Font.svg') format('svg'), url('../font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.woff') format('woff');
 }
 
-.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-.clearfix{*+height:1%;}
+
 
 /*/ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â¯Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã‚Â¥ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã‚Â¥Ãƒâ€šÃ‚Â­ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬ÂÃƒÆ’Ã‚Â¤Ãƒâ€šÃ‚Â½ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ*/
 [class^="icon-"],[class*=" icon-"]{
@@ -20,7 +19,21 @@ body {
 
 .icon-mobilephone::before {
     content: "\e908";
-    font-size: 13px;
+    font-size: 16px;
+}
+
+.icon-mobilephone1::before {
+    content: "\e908";
+    font-size: 30px;
+    padding-left: 3px;
+}
+
+@media (max-width: 1200px) {
+    .icon-mobilephone1::before {
+        content: "\e908";
+        font-size: 30px;
+        padding-right: 5px;
+    }
 }
 
 .icon-telephone::before {
@@ -92,6 +105,9 @@ fieldset[disabled] .btn-register.active {
     border-top: none;
     border-color: #f5f5f5;
     height: 70px;
+    top: 0;
+    width: 100%;
+    /*配合bootstarp来达到导航栏吸顶效果 top为吸顶 宽度重新覆盖一下*/
 }
 .navbar-itcast .navbar-brand {
     color: #777;
@@ -192,7 +208,7 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
 }
 
 .navbar {
-    position: relative;
+
     min-height: 50px;
     margin-bottom: 0;
     border: 1px solid transparent;
@@ -502,11 +518,12 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
     border-top-color: #ddd;
 }
 
-.panel-itcast > .panel-body{
+.panel-itcast > .panel-body {
     height: 150px;
     margin-right: 120px;
 }
- > .container > .tab-content {
+
+ .container > .tab-content {
     padding: 30px 0;
 }
 
@@ -565,7 +582,10 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
 
 
 /*新闻版块*/
-#news{}
+#news{
+    padding: 50px 0px;
+    border-bottom: 1px solid #c0c0c0;
+}
 
 #news .news-title{
     padding: 30px 20px;
@@ -587,6 +607,164 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
     bottom: -5px;
     right: -10px;
 }
+
+#news > .container > .row > .col-md-1 {
+    margin-top: 30px;
+}
+
+#news > .container > .row > .col-md-1 > ul > li > a > i {
+    text-align: center;
+}
+
+#news > .container > .row > .col-md-1 > ul > li > a {
+    color: #333333;
+}
+
+#news > .container > .row > .col-md-1 > ul > li > a:hover {
+    background-color: #E92322;
+    color: white;
+}
+
+#news > .container > .row > .col-md-1 > ul > li.active > a {
+    background-color: #E92322;
+    color: white;
+}
+
+@media (max-width: 1200px){
+    #news > .container > .row > .col-md-1 > ul > li.active > a,
+    #news > .container > .row > .col-md-1 > ul > li > a{
+        padding: 10px 8px;
+    }
+}
+
+#news > .container > .row > .col-md-6 > .tab-content > .tab-pane > ul.news-list  {
+    margin-top: 40px;
+}
+
+#news > .container > .row > .col-md-6 > .tab-content > .tab-pane > ul.news-list > li.list {
+    list-style: none;
+    font-size: 16px;
+}
+
+#news > .container > .row > .col-md-6 > .tab-content > .tab-pane > ul.news-list > li.list > a{
+    color: #333333;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+    .nav-stacked>li {
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+/*合作伙伴*/
+#hzhb{
+    padding: 30px;
+}
+
+#hzhb ul{
+    margin: 30px auto;
+    padding: 0px;
+    width: 818px;
+    position: relative;
+    overflow: hidden;
+}
+
+#hzhb ul li {
+    float: left;
+    list-style: none;
+}
+
+#hzhb ul li a{
+    font-size: 50px;
+    padding: 10px 20px;
+}
+
+#hzhb ul li a:hover{
+    text-decoration: none;
+}
+
+#hzhb ul li+li a {
+    border-left: 1px solid #e0e0e0;
+}
+
+.icon-uniE930:hover {
+    color: #df3232;
+}
+
+.icon-uniE930:before {
+    content: "\e946";
+}
+
+.icon-uniE92F:hover {
+    color: #e8380d;
+}
+
+.icon-uniE92F:before {
+    content: "\e92f";
+}
+
+.icon-uniE92E:hover {
+    color: #ed6f00;
+}
+
+.icon-uniE92E:before {
+    content: "\e92e";
+}
+
+.icon-uniE92A:hover {
+    color: #159f69;
+}
+
+.icon-uniE92A:before {
+    content: "\e92a";
+}
+
+.icon-uniE929:hover {
+    color: #07569e;
+}
+
+.icon-uniE929:before {
+    content: "\e929";
+}
+
+.icon-uniE931:hover {
+    color: #004098;
+}
+
+.icon-uniE931:before {
+    content: "\e931";
+}
+
+.icon-uniE92C:hover {
+    color: #d32019;
+}
+
+.icon-uniE92C:before {
+    content: "\e92c";
+}
+
+.icon-uniE92B:hover {
+    color: #3eac4a;
+}
+
+.icon-uniE92B:before {
+    content: "\e92b";
+}
+
+.icon-uniE92D:hover {
+    color: #2bb289;
+}
+
+.icon-uniE92D:before {
+    content: "\e92d";
+}
+
+
+/*/合作伙伴*/
 
 #footer{height: 200px}
 /*/新闻版块*/

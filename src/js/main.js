@@ -37,6 +37,24 @@ $(function () {
         $scroll.css('overflow-x','scroll');
         $ulcontainer.css('width',numWidth);
     }
+    //点击a更换title nodevalue
+    var $newstitle = $('.news-title');
+    $('#news .nav-pills a').on('click',function () {
+        var $this = $(this);
+        var title = $this.data('title');
+        //创建点击事件 获取dat属性 设置titel的nodevlue
+        $newstitle.text(title);
+    })
+
+    // $('#nav').affix({
+    //     offset: {
+    //         top: 100,
+    //         bottom: function () {
+    //             return (this.bottom = $('.footer').outerHeight(true))
+    //         }
+    //     }
+    // })
+
 });
 
 // numWidth > $(window).width()
