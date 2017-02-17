@@ -763,10 +763,13 @@ fieldset[disabled] .navbar-itcast .btn-link:focus {
     content: "\e92d";
 }
 
+@media (max-width: 768px) {
+    
+}
 
 /*/合作伙伴*/
 
-#footer{height: 200px}
+/*#footer{height: 200px}*/
 /*/新闻版块*/
 /*/ÃƒÆ’Ã‚Â¤Ãƒâ€šÃ‚ÂºÃƒâ€šÃ‚Â§ÃƒÆ’Ã‚Â¥ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¦Ãƒâ€¦Ã‚Â½Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã‚Â¨Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â*/
 
